@@ -27,7 +27,7 @@ stages:
   jobs:
   - job: DockerBuild
     steps:
-    - task: Docker
+    - task: Docker@1
       inputs:
         containerRegistry: 'azure-registry'
         repository: 'java-app'
